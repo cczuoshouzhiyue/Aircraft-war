@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模仿微信飞机大战</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css.css">
+<body id="body">
+ <div class="content">
+   <div class="main" id="main" onclick="purse()">
+       <button class="startBtn" onclick="start(event)">开始游戏</button>
+   </div>
+     <div class="showScores">
+         分数: <span class="scores">0</span>
+     </div>
+     <div class="endGame">
+         <span>游戏结束！</span>
+         <p>我的分数：<span class="scores">0</span></p>
+         <button class="reStart" onclick="reStart()">重新开始</button>
+     </div>
+     <div class="gamePurse">
+         游戏暂停
+         <button onclick="continueName()">继续游戏</button>
+         <button onclick="reStart()">重新开始</button>
+     </div>
+ </div>
+ <script src="jquery.js"></script>
+ <script src="main.js"></script>
+</body>
+</html>
